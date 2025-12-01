@@ -1,5 +1,5 @@
 require("mason").setup()
-require("mason-lspconfig").setup {
+Require("mason-lspconfig").setup {
     ensure_installed = {"clangd"},
 }
 
@@ -24,8 +24,11 @@ cmp.setup({
     },
 })
 
--- clangd config
+-- lsp config
 vim.lsp.enable("clangd")
+vim.lsp.enable('sqls')
+vim.lsp.enable('ts_ls')
+vim.lsp.enable('html')
 
 -- autoformat
 vim.api.nvim_create_autocmd("BufWritePre", {
@@ -34,3 +37,5 @@ vim.api.nvim_create_autocmd("BufWritePre", {
         vim.lsp.buf.format()
     end,
 })
+
+
