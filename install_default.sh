@@ -3,7 +3,7 @@
 # install essential packages
 sudo pacman -Syu --noconfirm
 sudo pacman -S --needed base-devel --noconfirm
-sudo pacman -S eza git neovim zsh zoxide bat fd ripgrep starship procs --noconfirm
+sudo pacman -S eza git neovim zsh zoxide unzip bat fd ripgrep starship procs --noconfirm
 sudo pacman -S nerd-fonts-jetbrains-mono --noconfirm
 
 # install yay (AUR helper)
@@ -57,7 +57,7 @@ echo '[git_status]' >> ~/.config/starship.toml
 echo 'conflicted = "≠"' >> ~/.config/starship.toml
 echo 'deleted = "✘"' >> ~/.config/starship.toml
 echo 'modified = "●"' >> ~/.config/starship.toml
-echo 'staged = "✔"' >> ~/.config/starship.toml
+echo 'staged = "✔ "' >> ~/.config/starship.toml
 echo 'untracked = "★"' >> ~/.config/starship.toml 
 
 source $HOME/.bashrc

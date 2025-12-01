@@ -1,5 +1,5 @@
 require("mason").setup()
-Require("mason-lspconfig").setup {
+require("mason-lspconfig").setup {
     ensure_installed = {"clangd"},
 }
 
