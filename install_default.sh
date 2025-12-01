@@ -52,7 +52,7 @@ echo '[directory]' >> ~/.config/starship.toml
 echo 'truncation_length = 3' >> ~/.config/starship.toml
 echo 'truncation_symbol = "…/"' >> ~/.config/starship.toml
 echo '[git_branch]' >> ~/.config/starship.toml
-echo 'symbol = " "' >> ~/.config/starship.toml
+echo 'symbol = "| "' >> ~/.config/starship.toml
 echo '[git_status]' >> ~/.config/starship.toml
 echo 'conflicted = "≠"' >> ~/.config/starship.toml
 echo 'deleted = "✘"' >> ~/.config/starship.toml
