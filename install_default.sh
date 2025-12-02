@@ -5,6 +5,7 @@ sudo pacman -Syu --noconfirm
 sudo pacman -S --needed base-devel --noconfirm
 sudo pacman -S eza git neovim zsh zoxide unzip bat fd ripgrep starship procs --noconfirm
 sudo pacman -S nerd-fonts-jetbrains-mono --noconfirm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 
 # install yay (AUR helper)
 # check if yay is already installed
@@ -41,6 +42,7 @@ echo 'alias grep="rg"' >> ~/.bashrc
 
 echo 'eval "$(zoxide init bash)"' >> ~/.bashrc
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
+echo '\. "$HOME/.nvm/nvm.sh"' >> ~/.bashrc
 mkdir -p ~/.config/nvim/ 
 
 
