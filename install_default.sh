@@ -45,7 +45,6 @@ echo 'eval "$(starship init bash)"' >> ~/.bashrc
 echo '\. "$HOME/.nvm/nvm.sh"' >> ~/.bashrc
 mkdir -p ~/.config/nvim/ 
 
-
 rm -f ~/.config/starship.toml
 
 echo 'add_newline = true' >> ~/.config/starship.toml
